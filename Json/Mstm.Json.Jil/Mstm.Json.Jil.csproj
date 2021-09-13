@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Description>Json序列化支持，使用jil实现</Description>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/Json/Mstm.Json.Jil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jil" Version="2.15.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mstm.Json.Core\Mstm.Json.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

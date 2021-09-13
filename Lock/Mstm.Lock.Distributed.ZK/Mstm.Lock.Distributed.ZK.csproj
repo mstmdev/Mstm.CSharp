@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.1</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Description>基于Zookeeper实现的分布式锁</Description>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/Lock/Mstm.Lock.Distributed.ZK</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rabbit.Zookeeper" Version="1.0.0" />
+    <PackageReference Include="ZooKeeperNetEx.Recipes" Version="3.4.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Mstm.Common\Mstm.Common.csproj" />
+    <ProjectReference Include="..\Mstm.Lock.Core\Mstm.Lock.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>

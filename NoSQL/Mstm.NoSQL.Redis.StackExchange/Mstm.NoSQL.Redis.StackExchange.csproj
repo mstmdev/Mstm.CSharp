@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.4</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Description>Redis连接客户端，使用StackExchange实现</Description>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/NoSQL/Mstm.NoSQL.Redis.StackExchange</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Json\Mstm.Json.Core\Mstm.Json.Core.csproj" />
+    <ProjectReference Include="..\..\Json\Mstm.Json.Newtonsoft\Mstm.Json.Newtonsoft.csproj" />
+    <ProjectReference Include="..\..\Log\Mstm.Log.Core\Mstm.Log.Core.csproj" />
+    <ProjectReference Include="..\Mstm.NoSQL.Redis.Core\Mstm.NoSQL.Redis.Core.csproj" />
+  </ItemGroup>
+
+</Project>

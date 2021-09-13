@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/Log/Mstm.Log.Log4Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>0.1.7</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Product>mstmdev</Product>
+    <Description>基于log4net的日志组件实现</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mstm.Log.Core\Mstm.Log.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Version>0.1.2</Version>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/DynamicScript/Mstm.DynamicScript.Core</PackageProjectUrl>
+    <Description>提供动态脚本运行支持的组件</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Mstm.Common\Mstm.Common.csproj" />
+  </ItemGroup>
+
+</Project>

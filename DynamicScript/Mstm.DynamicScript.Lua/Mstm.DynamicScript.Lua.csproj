@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Version>0.1.2</Version>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/DynamicScript/Mstm.DynamicScript.Lua</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>提供lua脚本的执行引擎，使用MoonSharp实现</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mstm.DynamicScript.Core\Mstm.DynamicScript.Core.csproj" />
+  </ItemGroup>
+
+</Project>

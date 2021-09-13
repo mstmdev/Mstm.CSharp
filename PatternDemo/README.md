@@ -1,0 +1,2 @@
+﻿# Mstm.PatternDemo
+Mstm.PatternDemo

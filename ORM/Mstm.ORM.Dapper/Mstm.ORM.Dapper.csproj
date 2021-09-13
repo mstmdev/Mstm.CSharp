@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Description>数据库操作组件，使用Dapper作为核心引擎</Description>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/ORM/Mstm.ORM.Dapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mstm.ORM.Core\Mstm.ORM.Core.csproj" />
+  </ItemGroup>
+
+</Project>

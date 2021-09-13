@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shouldly" Version="2.8.3" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mstm.SQLAnalysis.Core\Mstm.SQLAnalysis.Core.csproj" />
+    <ProjectReference Include="..\Mstm.SQLAnalysis.MSSQLServer\Mstm.SQLAnalysis.MSSQLServer.csproj" />
+    <ProjectReference Include="..\Mstm.SQLAnalysis.MySQL\Mstm.SQLAnalysis.MySQL.csproj" />
+    <ProjectReference Include="..\Mstm.SQLAnalysis.Oracle\Mstm.SQLAnalysis.Oracle.csproj" />
+    <ProjectReference Include="..\Mstm.SQLAnalysis.Sybase\Mstm.SQLAnalysis.Sybase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net47'">
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+</Project>

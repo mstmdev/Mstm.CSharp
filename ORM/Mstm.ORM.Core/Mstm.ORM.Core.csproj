@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>mstmdev</Authors>
+    <Company>mstmdev</Company>
+    <Description>数据库操作抽象组件</Description>
+    <PackageProjectUrl>https://github.com/mstmdev/Mstm.CSharp/tree/master/ORM/Mstm.ORM.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mstmdev/Mstm.CSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mstm.Common" Version="0.1.5" />
+    <PackageReference Include="Mstm.Json.Core" Version="0.1.8" />
+    <PackageReference Include="Mstm.Log.Core" Version="0.1.8" />
+  </ItemGroup>
+
+</Project>
